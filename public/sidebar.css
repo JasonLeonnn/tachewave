@@ -1,0 +1,87 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBE3D5;
+    font-family: 'Rockwell';
+    background-image: url("bgweb.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+.body{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidebar{
+    width: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #164863;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+    height: 100%;
+}
+
+.sidebar:hover{
+    width: 170px;
+}
+
+.sidebar:hover > .item > .text{
+    opacity: 1;
+}
+
+hr{
+    color: #DDF2FD;
+    margin: 15px 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.item .icon{
+    width: 40px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: #DDF2FD;
+}
+
+.text{
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    transition-delay: .2s;
+    margin-left: 15px;
+    white-space: nowrap;
+    color: #DDF2FD;
+}
+
+a{
+    text-decoration: none;
+    color: #DDF2FD;
+    transition: 0.3s;
+}
+
+.text a:hover{
+    color: #6cc1d9;
+}
+
+.text a:active{
+    background-color: #9BBEC8;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TâcheWave</title>
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="event.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="item">
+                <img class="icon" src="logo.png">
+                <div class="text">TâcheWave</div>
+            </div>
+            <hr>
+            <div class="item">
+                <img class="icon" src="icon1.png">
+                <div class="text"><a href="home.html">Home</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon2.png">
+                <div class="text"><a href="todo.html">To-do</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon3.png">
+                <div class="text"><a href="event.html">Event</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon4.png">
+                <div class="text"><a href="focus.html">Focus</a></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="header">
+                <h2 class="title">Events Calendar</h2>
+            </div>
+            <div class="main">
+                <div class="inputDiv">
+                    <input type="text" id="eventName" placeholder="Event name...">
+                    <div class="dateDiv">
+                        <input type="date" id="eventDate" placeholder="Event date...">
+                    </div>
+                    <span onclick="addEvent()" class="addBtn">Add Event</span>
+                </div>
+                <div class="calendar-display">
+                    <div class="calendar-container">
+                        <header class="calendar-header">
+                            <p class="calendar-current-date"></p>
+                            <div class="calendar-navigation">
+                                <span id="calendar-prev"
+                                    class="material-symbols-rounded">
+                                    &lt
+                                </span>
+                                <span id="calendar-next"
+                                    class="material-symbols-rounded">
+                                    &gt
+                                </span>
+                            </div>
+                        </header>
+                
+                        <div class="calendar-body">
+                            <ul class="calendar-weekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="calendar-dates"></ul>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <ul class="user-event"></ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

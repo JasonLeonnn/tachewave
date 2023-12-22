@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TâcheWave</title>
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="item">
+                <img class="icon" src="logo.png">
+                <div class="text">TâcheWave</div>
+            </div>
+            <hr>
+            <div class="item">
+                <img class="icon" src="icon1.png">
+                <div class="text"><a href="home.html">Home</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon2.png">
+                <div class="text"><a href="todo.html">To-do</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon3.png">
+                <div class="text"><a href="event.html">Event</a></div>
+            </div>
+            <div class="item">
+                <img class="icon" src="icon4.png">
+                <div class="text"><a href="focus.html">Focus</a></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="header">
+                <h2 class="title">To-do Lists</h2>
+            </div>
+            <div class="main">
+                <div class="inputDiv">
+                    <input type="text" id="userInput" placeholder="Task name...">
+                    <div class="dateDiv">
+                        <input type="date" id="dueDate" placeholder="Due date...">
+                    </div>
+                    <span onclick="newTask()" class="addBtn">Add Task</span>
+                </div>
+                <div class="taskDiv">
+                    <ul id="userTask">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
